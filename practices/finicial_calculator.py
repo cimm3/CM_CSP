@@ -8,4 +8,5 @@ print("You spent $", rent, "which is", ((rent/monthly_income) * 100), "% of you 
 
 monhtly_utilities = float (input ( "How much money do you spend on utilities: $ "))
 
-print("that is a totola of $", monhtly_utilities, " which is", (monhtly_utilities))
+print("that is a total of $", monhtly_utilities, " which is", ((monhtly_utilities/monhtly_utilities)*100), "%of your income.")
+
