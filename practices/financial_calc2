@@ -1,0 +1,16 @@
+# CM, finicial calculator python 
+
+def monthly (cost):
+  input(f"How much is your {cost}:$")
+  return cost
+
+income = monthly("monthly income")
+rent = monthly("rent")
+utilities = monthly("utilities")
+groceries = monthly("groceries")
+transportation = monthly("transportation")
+
+def percent (percent):
+  return percent / income
+
+print(rent)
