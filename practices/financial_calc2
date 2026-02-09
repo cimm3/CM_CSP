@@ -1,8 +1,12 @@
 # CM, finicial calculator python 
 
 def monthly (cost):
-  input(f"How much is your {cost}:$")
+  cost = float(input(f"How much is your {cost}:$"))
   return cost
+
+def percent (cost, income):
+  percent == round((cost/income)*0.1,2)
+  return percent
 
 income = monthly("monthly income")
 rent = monthly("rent")
@@ -11,4 +15,17 @@ groceries = monthly("groceries")
 transportation = monthly("transportation")
 total = income- (rent + utilities + groceries + transportation)
 
+savings = income*0.1
+spending = income - (savings + transportation + groceries + utilities + rent)
 
+rentpr = percent(rent,income)
+utilitiespr = percent(utilities,income)
+groceriespr = percent(groceries, income)
+transportationpr = percent(transportation, income)
+
+print(F"Rent is %{percent, rentpr}")
+print( f"utilitites is %{percent, utilitiespr}")
+print(f"Groceries is %{percent,groceriespr}")
+print(f"Transptation is %{percent, transportationpr}")
+print(f"You should save ${savings} which is 10% of your daily income")
+print(f"That leaves you with ${spending} of spending each month!")
