@@ -9,8 +9,6 @@ rent = monthly("rent")
 utilities = monthly("utilities")
 groceries = monthly("groceries")
 transportation = monthly("transportation")
+total = income- (rent + utilities + groceries + transportation)
 
-def percent (percent):
-  return percent / income
 
-print(rent)
