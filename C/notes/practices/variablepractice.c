@@ -36,5 +36,5 @@ int main(){
 
 printf("Your name is %s and you are %d years old,and eye color is %s your favorite color is %s. As of %d you go to %s and your favorite class is %s. Your lucky number is %d and decimal is %f.", name, age, eye, color, year,  school_name, class, lucky, decimal);
 
-retun 0;
+return 0;
 }
