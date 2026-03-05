@@ -1,8 +1,9 @@
 #include <stdio.h>
 #include <math.h>
 
-float percent(cost, income){
-    (cost/income) *100;
+float percent( float cost, float income){
+    return (cost/income) *100;
+  
 }
 
 
@@ -35,8 +36,8 @@ printf("What is your monthly income: ");
 
      printf("\nYour rent is $%.2f and that is %.0f%% of your income.\n", rent, percent);
     printf("Your utilities are $%.2f and that is %.0f%% of your income.\n", utilities, percent);
-    printf("Your groceries are $%.2f and that is %.0f%% of your income.\n", groceries, (groceries / income) * 100);
-    printf("Your transportation is $%.2f and that is %.0f%% of your income.\n", transportation, (transportation / income) * 100);
+    printf("Your groceries are $%.2f and that is %.0f%% of your income.\n", groceries, percent);
+    printf("Your transportation is $%.2f and that is %.0f%% of your income.\n", transportation, percent);
     printf("You should save $%.2f a month, that is 10%% of your income.\n", savings);
     printf("You have $%.2f of spending money each month!\n", spending);
 
