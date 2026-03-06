@@ -5,39 +5,35 @@ float percent( float cost, float income){
     return (cost/income) *100;
   
 }
-
-
-
-int main(){
-     float income;
+  float income;
     float rent;
     float utilities;
     float groceries;
     float transportation;
     float savings;
     float spending;
-printf("What is your monthly income: ");
-    scanf("%f", &income);
+float question(char* question){
+    float total;
+    printf("What is your monthly on %s: $", question);
+    scanf("%f", &total);
+    return total;
+}
 
-    printf("What is your monthly rent/mortgage: ");
-    scanf("%f", &rent);
 
-    printf("What is your monthly utilities: ");
-    scanf("%f", &utilities);
-
-    printf("What is your monthly groceries: ");
-    scanf("%f", &groceries);
-    
-    printf("What is your monthly transportation: ");
-    scanf("%f", &transportation);
-
+int main(){
+    question("income");
+    printf("%.2f\n", income);
+    question("rent/mortage");
+    question("utilitities");
+    question("groceries");
+    question("transpottaion");
     savings = income * 0.10;
     spending = income - (rent + utilities + groceries + transportation + savings);
 
-     printf("\nYour rent is $%.2f and that is %.0f%% of your income.\n", rent, percent);
-    printf("Your utilities are $%.2f and that is %.0f%% of your income.\n", utilities, percent);
-    printf("Your groceries are $%.2f and that is %.0f%% of your income.\n", groceries, percent);
-    printf("Your transportation is $%.2f and that is %.0f%% of your income.\n", transportation, percent);
+     printf("Your rent is %.f%% of your income.\n", percent(rent, income));
+    printf("Your utilities is %.f%% of your income.\n", percent(utilities, income));
+    printf("Your groceries is %.f%% of your income.\n", percent(groceries, income));
+    printf("Your transportation is %.f%% of your income.\n", percent(transportation, income));
     printf("You should save $%.2f a month, that is 10%% of your income.\n", savings);
     printf("You have $%.2f of spending money each month!\n", spending);
 
