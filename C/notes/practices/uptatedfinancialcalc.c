@@ -24,9 +24,13 @@ int main(){
     question("income");
     printf("%.2f\n", income);
     question("rent/mortage");
+    printf("%.f\n", rent);
     question("utilitities");
+    printf("%.f\n", utilities);
     question("groceries");
+    printf("%.f\n", groceries);
     question("transpottaion");
+    printf("%.f\n", transportation);
     savings = income * 0.10;
     spending = income - (rent + utilities + groceries + transportation + savings);
 
