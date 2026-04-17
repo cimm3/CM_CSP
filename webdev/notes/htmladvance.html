@@ -4,9 +4,15 @@
         <title>advanced Notes on HTML</title>
         <meta charset = "UTF-8">
         <!--Embeded CSS goes inside of the head tags using the <style> tag-->
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Felipa&display=swap" rel="stylesheet">
             <style>
-                *{
+                body{
                     background-color: rgb(241, 187, 187);
+                    font-family: "Felipa", serif;
+                    font-weight: 400;
+                    font-style: normal;
                 }
                 p{
                     background-color: black;
@@ -26,11 +32,26 @@
                 h1{
                     text-align: center; 
                     border: 2px solid yellow;
+                    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
                 }
                 img{
                     width: 50%;
-                    
 
+                }
+                #bolded{
+                    font-weight: bolder;
+                    font-family: papyrus, 'Franklin Gothic Medium', fantasy;
+                }
+                .box{
+                    background-color: blueviolet; height: 100px; width: 100px; 
+                    height: 100px;
+                    text-align: center;
+                    margin: 20px;
+                    padding-top: 30px;
+                }
+                .box-wrapper{
+                    display: flex;
+                    justify-content: center;
                 }
 
             </style>
@@ -38,7 +59,11 @@
     <body>
         <H1> HTML Advanced Notes</H1>
         <!--Inline styles are done in the HTML oppening tag. This is a bad parctice use!-->
-        <div style="background-color: blueviolet; height: 100px; width: 100px; "></div>
+        <div class="box wrapper">
+        <div  class ="box">
+            <P> this is a div</P>
+        </div>
+         
         <p>This is how you make an ordered numbered list</p>
         <ol>
             <div id = "ordered list"></div>
@@ -48,7 +73,7 @@
             <li>Lunch</li>
         </ol>
         <div id=" unorder list"></div>
-            <p> This is and unoreder list (bulleted)</p>
+            <p> This is an <span id = "bolded" >unoreder list (bulleted)</span></p>
             <ul style = "list-style-type:circle">
                 <li class = "odd">Apple</li>
                 <li>Orange</li>
