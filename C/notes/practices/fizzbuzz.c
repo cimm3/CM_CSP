@@ -2,8 +2,8 @@
 #include <stdio.h>
 int main(){
     int i = 0;
-
-for(i ; i <50 ; i++){
+){
+for(i ; i <50 ; i++
     if(i %3 == 0 && i %5 == 0){
         printf("FizzBuzz\n");
     } else if( i %3 == 0){
