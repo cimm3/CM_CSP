@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head> 
+        <title>Javascrpit notes</title>
+        <meta charset = "UTF-8">
+        <style>
+            img{
+                width: 50%;
+                #image{
+                    display:none;
+                }
+            }
+        </style>
+        <script>
+            function changecolor(){
+                document.getElementById("change").style.color = "orange"
+            }
+            function show(){
+                if(document.getElementById("image").style.display == 'block'){
+                    document.getElementById("image").style.display = 'none'
+                    document.getElementById("image").style.display = 'SHow Image'
+                }else{
+                    document.getElementById("image").style.display = 'block'
+                }
+                document.getElementById("image").style.display = 'block'
+                document.getElementById("image").style.display = 'hide image'
+            }
+            function hover(){
+                document.getElementById("button").style.backgroundColor="blue"
+                document.getElementById("button").style.Color="white"
+            }
+            function leave(id){
+                document.getElementById("button").style.backgroundColor="grey"
+                document.getElementById("button").style.Color="balck"
+            }
+            function popup(){
+                alert("You should be taking notes")
+            }
+            // onclick onmousedown onmouseeneter- onmouseover onmouseleave-onmouseout
+        
+        </script>
+    
+    </head>
+    <body>
+        <h1 id = "change" onmouseover="popup()"> JavaScrip notes</h1>
+        <button onclick="changecolor()" onmousemover="hover(show)" id = "button"
+        onmouseleave="levae(show)"> Clickme</button>
+        <button onclick="show()" id="show">show image</button>
+        <div id ="image">
+            <img src="https://www.tastingtable.com/img/gallery/x-facts-about-raising-canes-every-fried-chicken-enthusiast-should-know/l-intro-1744806237.jpg" alt="Rasing Canes" >
+        </div>
+        
+    </body>
+</html>

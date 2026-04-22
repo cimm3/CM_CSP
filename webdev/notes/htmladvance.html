@@ -50,11 +50,17 @@
                     padding-top: 30px;
                 }
                 .box-wrapper{
-                    display: flex;
+                    display: none;
                     justify-content: center;
                 }
-
             </style>
+            <script>
+                function show(){
+                    document.getElementById("clicking").innerHTML = "Hide Images"
+                    document.getElementById("images").style.display="blobk"
+
+                }
+            </script>
     </head>
     <body>
         <H1> HTML Advanced Notes</H1>
@@ -82,7 +88,7 @@
                 <li class = "odd">Grape</li>
             </div>
             </ul>
-            <a href = "https://ucas-edu.instructure.com/courses/4362/assignments/89779" target = "_blank"> CSP notes for advanced HTML Notes</a>
-            <img src="https://www.tastingtable.com/img/gallery/x-facts-about-raising-canes-every-fried-chicken-enthusiast-should-know/l-intro-1744806237.jpg" alt="Rasing Canes">
-    </body>
+            <button id = "clicking" onclick></button>
+            <div id ="images"><a href = "https://ucas-edu.instructure.com/courses/4362/assignments/89779" target = "_blank"> CSP notes for advanced HTML Notes</a>
+                <img src="https://www.tastingtable.com/img/gallery/x-facts-about-raising-canes-every-fried-chicken-enthusiast-should-know/l-intro-1744806237.jpg" alt="Rasing Canes"></div>
 </html>
