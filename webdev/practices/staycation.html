@@ -1,4 +1,4 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en"> 
  <head>
  <title> Bryce Canyon National Park</title>
@@ -32,8 +32,8 @@
  width : 50%;
  height :50%;
  }
- #hoverLogo:hover{
- content: url("https://upload.wikimedia.org/wikipedia/commons/3/3c/El_Clasico_2017.jpg");
+ #hoverpic:hover{
+ content: url("https://assets.iflscience.com/assets/articleNo/67380/aImg/65427/hoodoos-o.webp");
  }
  button{
  padding: 10px;
@@ -42,14 +42,14 @@
  border-radius: 8px;
  border: none;
  }
- #clasico{
+ #Navajo{
  display: none;
  margin-top: 20px;
  }
  </style>
  <script>
- function toggleClasico() {
- let section = document.getElementById("clasico");
+ function toggleNavajo() {
+ let section = document.getElementById("Navajo");
 
  if (section.style.display === "none") {
  section.style.display = "block";
@@ -61,7 +61,7 @@
  </head>
 
  <body>
- <h1>The Spanish League </h1>
+ <h1>Bryce Canyon National Park </h1>
 
  <h3> Why go? </h3>
  <p> Bryce National Park is located in southwestern Utah, and is one of the coolest rock formations. It is well known for its unparalled landscapes, cretaing the largest concentrartions of hoodoos. The park offers greta stagazing sites, camps and loads of trails. It is most well  known for the vibrant red color of the rocks, and the rocks form a "natural city" due to their structure. </p>
@@ -78,23 +78,17 @@
  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0OyGg994DrZ07OpHNQs6ZA8OeizEndqX04A&s" alt ="Inspiration Point">
 
  <!-- HOVER IMAGE ADDED -->
- <img id="hoverLogo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/LaLiga_logo_2023.svg/3840px-LaLiga_logo_2023.svg.png" alt ="La Liga after 2023">
+ <img id="hoverpic" src="https://www.undercanvas.com/wp-content/uploads/2023/11/shutterstock_172879394.jpg" alt ="hoodoos at Bryce Canyon">
  </div>
 
- <a href = "https://www.laliga.com/en-GB" target = "_blank"> Here's the link to La Liga's official page</a>
-
  <!-- BUTTON -->
- <button onclick="toggleClasico()">Show El Clásico Rivalry</button>
- <div id="clasico">
- <h3>El Clásico Rivalry</h3>
+ <button onclick="toggleNavajo()">the Navajo Loop </button>
+ <div id="Navajo">
+ <h3>the Most famous trail </h3>
  <p>
- El Clásico is the historic rivalry between FC Barcelona and Real Madrid. It is one of the most famous
- matches in the world, going beyond soccer into politiccs and culture, representing the tension between
- Catalonia and the Spanish capital. The rivalry became especially intense during the era of Lionel Messi
- and Cristiano Ronaldo, where both players dominated world football and pushed each other to their limits.
- Today, El Clásico continues to be one of the most watched sporting events globally.
+    It’s easy to see why this trail is one of the most popular in the park. It starts with a horizon-sweeping view at Sunset Point, then makes its way past the Silent City — a rock metropolis of hoodoos and spires — to Wall Street, where the trail heads into a narrow slot canyon surrounded by sweeping sandstone walls. the walk is around 1.5 miles and the bets times to visit are around april - October
  </p>
 
- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGxfOVk_WKgjNqeBp9Xf8LeTcooOZWT3GFaQ&s"alt ="El classico pic">
+ <img src="https://utahhikingbeauty.com/wp-content/uploads/2021/10/IMG_9198.jpg"alt ="Navajoo Trail">
  </div>
 </html>
