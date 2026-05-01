@@ -14,13 +14,15 @@
 
  h1{
  text-align: center; 
- font-size: 1em;
+ font-size: 2em; /* fixed size so header stands out */
+ margin-bottom: 20px;
  }
 
  img{
  width : 25%;
  height :25%;
  transition: 0.3s;
+ margin: 10px; /* added spacing */
  }
 
  body{
@@ -28,13 +30,23 @@
  padding: 20px; 
  }
 
+ .image-container{
+ display: flex;
+ justify-content: center;
+ flex-wrap: wrap;
+ }
+
  #b4-2023{
  width : 50%;
  height :50%;
  }
+
+
  #hoverpic:hover{
+ transform: scale(1.1);
  content: url("https://assets.iflscience.com/assets/articleNo/67380/aImg/65427/hoodoos-o.webp");
  }
+
  button{
  padding: 10px;
  margin-top: 20px;
@@ -42,11 +54,15 @@
  border-radius: 8px;
  border: none;
  }
+
  #Navajo{
  display: none;
  margin-top: 20px;
+ padding: 10px; /* added padding */
  }
+
  </style>
+
  <script>
  function toggleNavajo() {
  let section = document.getElementById("Navajo");
@@ -64,31 +80,37 @@
  <h1>Bryce Canyon National Park </h1>
 
  <h3> Why go? </h3>
- <p> Bryce National Park is located in southwestern Utah, and is one of the coolest rock formations. It is well known for its unparalled landscapes, cretaing the largest concentrartions of hoodoos. The park offers greta stagazing sites, camps and loads of trails. It is most well  known for the vibrant red color of the rocks, and the rocks form a "natural city" due to their structure. </p>
+ <p> Bryce National Park is located in southwestern Utah, and is one of the coolest rock formations. It is well known for its unparalled landscapes, cretaing the largest concentrartions of hoodoos. The park offers greta stagazing sites, camps and loads of trails. It is most well known for the vibrant red color of the rocks, and the rocks form a "natural city" due to their structure. </p>
 
- <h3>LSome trails and things to do!</h3>
- <div class ="list"></div>
+ <h3>Some trails and things to do!</h3>
+
  <ul style = "list-style-type:circle">
- <li>Piaria View</li>
- <li>Sumset Point</li>
+ <li>Paria View</li>
+ <li>Sunset Point</li>
  <li>Sunrise Point</li>
  <li>Inspiration Point</li>
+ </ul>
 
- <div>
+
+ <div class="image-container">
  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0OyGg994DrZ07OpHNQs6ZA8OeizEndqX04A&s" alt ="Inspiration Point">
 
- <!-- HOVER IMAGE ADDED -->
+ 
  <img id="hoverpic" src="https://www.undercanvas.com/wp-content/uploads/2023/11/shutterstock_172879394.jpg" alt ="hoodoos at Bryce Canyon">
+
+ <img src="https://www.nps.gov/brca/planyourvisit/images/Bryce-Amphitheater-Sunrise_1.jpg" alt="Bryce Canyon view">
  </div>
 
- <!-- BUTTON -->
- <button onclick="toggleNavajo()">the Navajo Loop </button>
+ <button onclick="toggleNavajo()">The Navajo Loop</button>
+
  <div id="Navajo">
- <h3>the Most famous trail </h3>
+ <h3>The Most famous trail </h3>
  <p>
-    It’s easy to see why this trail is one of the most popular in the park. It starts with a horizon-sweeping view at Sunset Point, then makes its way past the Silent City — a rock metropolis of hoodoos and spires — to Wall Street, where the trail heads into a narrow slot canyon surrounded by sweeping sandstone walls. the walk is around 1.5 miles and the bets times to visit are around april - October
+ It’s easy to see why this trail is one of the most popular in the park. It starts with a horizon-sweeping view at Sunset Point, then makes its way past the Silent City — a rock metropolis of hoodoos and spires — to Wall Street, where the trail heads into a narrow slot canyon surrounded by sweeping sandstone walls. The walk is around 1.5 miles and the best times to visit are around April - October.
  </p>
 
- <img src="https://utahhikingbeauty.com/wp-content/uploads/2021/10/IMG_9198.jpg"alt ="Navajoo Trail">
+ <img src="https://utahhikingbeauty.com/wp-content/uploads/2021/10/IMG_9198.jpg" alt ="Navajo Trail">
  </div>
+
+</body>
 </html>
